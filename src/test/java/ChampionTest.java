@@ -129,4 +129,16 @@ public class ChampionTest {
         assertTrue(champName.equals("다리우스"));
         assertThat("다리우스", is(champName));
     }
+
+    // Let's find our Zoe using stream.
+    @Test
+    public void isThisTheZoeIAdded() {
+        // Let's find our Zoe
+        Optional<Champion> foundZoe = championList.stream()
+                .filter(c -> c.getName().equals("조이"))
+                .findFirst();
+        String zoeName = foundZoe.get().getName();
+        assertThat(zoeName, is("조이"));
+        assertTrue(foundZoe.get().getPosition().equals("어디든 간다"));
+    }
 }
