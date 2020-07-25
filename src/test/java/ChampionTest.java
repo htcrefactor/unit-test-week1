@@ -20,6 +20,7 @@ public class ChampionTest {
         Champion midChamp = new Champion("르블랑", "미드");
         Champion adcChamp = new Champion("베인", "바텀");
         Champion supportChamp = new Champion("레오나", "바텀");
+        Champion zoe = new Champion("조이", "어디든 간다");
 
         //앞서 만든 List 에 각 챔피언을 추가합니다.
         championList.add(topChamp);
