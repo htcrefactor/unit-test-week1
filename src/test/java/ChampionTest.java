@@ -114,8 +114,8 @@ public class ChampionTest {
     //property와 value가 같은지 테스트
     @Test
     public void shouldHaveSamePropertyAndValue() {
-        List<String> championNames1 = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가나", "블라디미르");
-        List<String> championNames2 = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가나", "블라디미르");
+        List<String> championNames1 = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가나", "블라디미르", "니코");
+        List<String> championNames2 = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가나", "블라디미르", "니코");
         assertThat(championNames1, samePropertyValuesAs(championNames2));
     }
 
