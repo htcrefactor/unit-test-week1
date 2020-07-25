@@ -94,7 +94,7 @@ public class ChampionTest {
 
     //hasProperty 활용하여 속성이 포함되어 있는지 테스트
     @Test
-    public void shouldHasPropertyPosition() {
+    public void shouldHavePropertyPosition() {
         assertThat(championList.get(2), hasProperty("name", not("조이")));
         assertThat(championList.get(0), hasProperty("position"));
         assertThat(championList.get(0), hasProperty("position", equalTo("탑")));
@@ -107,7 +107,7 @@ public class ChampionTest {
     //hasToString 활용 테스트
     @Test
     public void shouldHaveSomeChampName() {
-        List<String> champListNames = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가느", "블라디미르");
+        List<String> champListNames = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가나", "블라디미르");
         assertThat(champListNames.get(0), hasToString("루시안"));
     }
 
