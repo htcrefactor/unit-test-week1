@@ -47,7 +47,11 @@ public class UpperCaseCounterTest {
         String str = "ABCdefGHI";
         int result = upperCaseCounter.getNumberOfUpperCaseCharactersInString(str);
         //assertTrue로 맞는 테스트 코드 작성
+        assertTrue(result == 6);
+
         //assertFalse로 틀리는 값을 넣어 테스트 작성
+        assertFalse(result == 7);
+
         //assertThat 단정문을 사용해서 True인 테스트 코드 작성
         assertThat(result, is(6));
         System.out.println("result :: " + result);
