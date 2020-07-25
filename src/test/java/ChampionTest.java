@@ -77,10 +77,10 @@ public class ChampionTest {
 
     //객체 크기 검증 테스트 hasSize
     @Test
-    public void shouldChampionCountFive() {
-        assertTrue(championList.size() == 5);
-        assertThat(championList.size(), is(5));
-        assertThat(championList, hasSize(5));
+    public void shouldChampionCountSix() {
+        assertTrue(championList.size() == 6);
+        assertThat(championList.size(), is(6));
+        assertThat(championList, hasSize(6));
     }
 
     //서폿 챔피언은 타릭이어야 한다라는 조건으로 테스트 코드 작성
