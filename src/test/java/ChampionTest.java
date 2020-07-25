@@ -28,6 +28,7 @@ public class ChampionTest {
         championList.add(midChamp);
         championList.add(adcChamp);
         championList.add(supportChamp);
+        championList.add(zoe);
     }
 
     //List<String>을 생성하고 값이 비어 있는지를 테스트 empty()
