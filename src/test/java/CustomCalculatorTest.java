@@ -60,7 +60,7 @@ public class CustomCalculatorTest {
 
     //나누기 테스트 작성
     @Test
-    public void divide() {
+    public void divide() throws ArithmeticException {
         customCalculator = new CustomCalculator();
         int result = customCalculator.divide(25,5);
         /* 이곳에 테스트 코드를 작성하세요. */
