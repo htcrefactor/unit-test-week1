@@ -98,6 +98,10 @@ public class ChampionTest {
         assertThat(championList.get(2), hasProperty("name", not("조이")));
         assertThat(championList.get(0), hasProperty("position"));
         assertThat(championList.get(0), hasProperty("position", equalTo("탑")));
+
+        assertThat(championList.get(5), hasProperty("name", equalTo("조이")));
+        // 뉴 메타는 챔피언 라인을 고정관념 없이 바라봐야 생깁니다.
+        assertThat(championList.get(5), hasProperty("position", not("미드")));
     }
 
     //hasToString 활용 테스트
