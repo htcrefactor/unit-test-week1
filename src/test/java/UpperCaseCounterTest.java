@@ -18,7 +18,7 @@ public class UpperCaseCounterTest {
         assertThat(numberOfUpperCaseCharactersInString, is(0));
     }
 
-    //반겂울 전달했을 때 0을 리턴하는지에 대한 테스트 작성
+    //빈값울 전달했을 때 0을 리턴하는지에 대한 테스트 작성
     @Test
     public void getNumberOfUpperCaseCharactersInString_return_0_for_empty_input() {
         String str = "";
