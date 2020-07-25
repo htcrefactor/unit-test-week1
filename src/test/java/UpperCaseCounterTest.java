@@ -56,7 +56,7 @@ public class UpperCaseCounterTest {
     //잘못된 값을 참조했을 때 IndexOutOfBoundsException Exception이 발생하는지 테스트 코드 작성
     @Test(expected = IndexOutOfBoundsException.class)
     public void shouldThrowExceptionWhenGetZeroIndex() {
-        new ArrayList<Object>().get(0);
+        new ArrayList<Object>().get(-1);
     }
 
     //해당 메소드가 제한된 시간내에 실행되는지에 대한 테스트 코드 작성 : timeout 사용

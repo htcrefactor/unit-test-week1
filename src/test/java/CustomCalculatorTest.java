@@ -30,9 +30,8 @@ public class CustomCalculatorTest {
         int result = customCalculator.subtract(23,10);
         /* 이곳에 테스트 코드를 작성하세요. */
         assertTrue(result == 13);
-        assertFalse(result == 13);
-        // assertTrue(result == 13);
-        // assertThat(result, is(10));
+        assertFalse(result == 10);
+        assertFalse(result == 22);
         System.out.println("result :: " + result);
     }
 
