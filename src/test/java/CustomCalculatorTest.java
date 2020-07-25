@@ -1,6 +1,7 @@
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runners.model.TestTimedOutException;
 
 import java.util.ArrayList;
 
@@ -67,9 +68,11 @@ public class CustomCalculatorTest {
     }
 
 
-    @Test(timeout = 4000)
+    // This might fail the test randomly.
+    // @Test(timeout = 4001)
+    @Test(timeout = 5000)
     public void timeInMethodTest() throws InterruptedException {
-        Thread.sleep(5000);
+        Thread.sleep(4000);
     }
 
     @Test(expected = IndexOutOfBoundsException.class)
